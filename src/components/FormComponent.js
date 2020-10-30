@@ -15,6 +15,7 @@ class FormComponent extends Component {
         items.splice(this.props.id, 1);
         localStorage.setItem('bookList', JSON.stringify(items));
         this.props.getData();
+        this.printFavCount();
     }
     //mark fav cards
     markFav = (fav) => {
@@ -57,8 +58,8 @@ class FormComponent extends Component {
     //count total number of cards
     printFavCount = () => {
         let items = JSON.parse(localStorage.getItem('bookList'));
-
-        // console.log(items.length)
+        console.log("render")
+        console.log(items.length)
         var output = items.filter(book => book.fav == true);
         // console.log(output.length)
         let bookCount = document.querySelector("#book-count");

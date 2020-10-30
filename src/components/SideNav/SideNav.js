@@ -8,7 +8,7 @@ import addFavBooks from '../../img/add_favourite_select.png';
 import { NavLink } from 'react-router-dom';
 
 const SideNav = () => {
-    return ( 
+    return (
         <div className="side-wrapper">
             <div className="side-container">
                 <div className="logo-wrapper">
@@ -72,7 +72,7 @@ const SideNav = () => {
                 </div>
             </div>
         </div>
-     );
+    );
 }
- 
+
 export default SideNav;
