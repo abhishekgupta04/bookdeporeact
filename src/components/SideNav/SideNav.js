@@ -17,7 +17,7 @@ const SideNav = () => {
                 <div className="nav-wrapper">
                     <ul className="nav-listing">
                         <li className="nav-item">
-                            <NavLink exact to="/addform">
+                            <NavLink exact to="/">
                                 <span className="nav-icon">
                                     <img src={bookIcon} alt="" />
                                 </span>
