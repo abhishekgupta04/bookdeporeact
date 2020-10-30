@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/bookdeporeact/static/css/main.3fbe023c.chunk.css",
+    "main.js": "/bookdeporeact/static/js/main.c7aa74bf.chunk.js",
+    "main.js.map": "/bookdeporeact/static/js/main.c7aa74bf.chunk.js.map",
+    "runtime-main.js": "/bookdeporeact/static/js/runtime-main.7231883a.js",
+    "runtime-main.js.map": "/bookdeporeact/static/js/runtime-main.7231883a.js.map",
+    "static/js/2.4073923c.chunk.js": "/bookdeporeact/static/js/2.4073923c.chunk.js",
+    "static/js/2.4073923c.chunk.js.map": "/bookdeporeact/static/js/2.4073923c.chunk.js.map",
+    "index.html": "/bookdeporeact/index.html",
+    "precache-manifest.cfc578f0442daa5df84f5c2aa0a93e46.js": "/bookdeporeact/precache-manifest.cfc578f0442daa5df84f5c2aa0a93e46.js",
+    "service-worker.js": "/bookdeporeact/service-worker.js",
+    "static/css/main.3fbe023c.chunk.css.map": "/bookdeporeact/static/css/main.3fbe023c.chunk.css.map",
+    "static/js/2.4073923c.chunk.js.LICENSE.txt": "/bookdeporeact/static/js/2.4073923c.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/bookdeporeact/static/media/bg_left.456bfb5e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7231883a.js",
+    "static/js/2.4073923c.chunk.js",
+    "static/css/main.3fbe023c.chunk.css",
+    "static/js/main.c7aa74bf.chunk.js"
+  ]
+}
