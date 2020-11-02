@@ -45,23 +45,12 @@ class FavData extends Component {
             bookFavCount.innerText = output.length;
         }
     }
-    noData = () => {
-        this.setState({
-            data: true
-        });
-    }
     componentDidUpdate() {
         this.printFavCount();
-        // this.noData();
     }
     componentDidMount() {
         this.getData();
         this.printFavCount();
-        let items = JSON.parse(localStorage.getItem('bookList'));
-        var output = items.filter(book => book.fav == true);
-        if (output.length === 0) {
-            this.noData();
-        }
     }
     render() {
         let items = JSON.parse(localStorage.getItem('bookList')) || [];
@@ -70,8 +59,7 @@ class FavData extends Component {
         // console.log(output.length)
         const outputData = output.map((element, index) => {
             return (
-                // <FavDataComponent element={element} id={index} key={index} getData={this.getData} noData={!this.state.data} />
-                <FavDataComponent element={element} id={index} key={index} getData={this.getData} noData={this.noData} />
+                <FavDataComponent element={element} id={index} key={index} getData={this.getData} />
             )
         })
         const data = this.state.data;
@@ -91,7 +79,7 @@ class FavData extends Component {
                         </div>
                     </div>
                     <div className={`no-data ${!data ? "" : "found"}`}>
-                        <span>Nothing to show! Use "Add fav Books" from books section!! :) </span>
+                        <span>No data available, Please add some data from add books section... :) </span>
                     </div>
                 </div>
             </>
