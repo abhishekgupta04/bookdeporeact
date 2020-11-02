@@ -41,9 +41,9 @@ class App extends Component {
         <div className="App content-wrapper">
           <SideNav />
           <Switch>
-            <Route path="/" exact component={AddForm} />
-            <Route path="/books" exact component={FormData} />
-            <Route path="/favbooks" exact component={FavData} />
+            <Route path="/bookdeporeact" exact component={AddForm} />
+            <Route path="/bookdeporeact/books" exact component={FormData} />
+            <Route path="/bookdeporeact/favbooks" exact component={FavData} />
           </Switch>
         </div>
       </Router>

@@ -32,7 +32,7 @@ class FormComponent extends Component {
             }));
             Object.keys(items).forEach(key => {
                 if (items[key]["dataId"] === favTarget.getAttribute("data-id")) {
-                    console.log(this.state.hasChanged)
+                    // console.log(this.state.hasChanged)
                     items[key]["fav"] = this.state.hasChanged
                 }
             })
@@ -58,8 +58,8 @@ class FormComponent extends Component {
     //count total number of cards
     printFavCount = () => {
         let items = JSON.parse(localStorage.getItem('bookList'));
-        console.log("render")
-        console.log(items.length)
+        // console.log("render")
+        // console.log(items.length)
         var output = items.filter(book => book.fav == true);
         // console.log(output.length)
         let bookCount = document.querySelector("#book-count");
