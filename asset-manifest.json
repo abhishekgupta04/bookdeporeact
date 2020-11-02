@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/bookdeporeact/static/css/main.3fbe023c.chunk.css",
-    "main.js": "/bookdeporeact/static/js/main.4ee0ebf2.chunk.js",
-    "main.js.map": "/bookdeporeact/static/js/main.4ee0ebf2.chunk.js.map",
+    "main.js": "/bookdeporeact/static/js/main.e4a2f4e8.chunk.js",
+    "main.js.map": "/bookdeporeact/static/js/main.e4a2f4e8.chunk.js.map",
     "runtime-main.js": "/bookdeporeact/static/js/runtime-main.7231883a.js",
     "runtime-main.js.map": "/bookdeporeact/static/js/runtime-main.7231883a.js.map",
     "static/js/2.4073923c.chunk.js": "/bookdeporeact/static/js/2.4073923c.chunk.js",
     "static/js/2.4073923c.chunk.js.map": "/bookdeporeact/static/js/2.4073923c.chunk.js.map",
     "index.html": "/bookdeporeact/index.html",
-    "precache-manifest.c9fac93ffd78bc6620aed9e5a670a69c.js": "/bookdeporeact/precache-manifest.c9fac93ffd78bc6620aed9e5a670a69c.js",
+    "precache-manifest.28f3e3731298ebf8fbf9ce6e8127bfe7.js": "/bookdeporeact/precache-manifest.28f3e3731298ebf8fbf9ce6e8127bfe7.js",
     "service-worker.js": "/bookdeporeact/service-worker.js",
     "static/css/main.3fbe023c.chunk.css.map": "/bookdeporeact/static/css/main.3fbe023c.chunk.css.map",
     "static/js/2.4073923c.chunk.js.LICENSE.txt": "/bookdeporeact/static/js/2.4073923c.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.7231883a.js",
     "static/js/2.4073923c.chunk.js",
     "static/css/main.3fbe023c.chunk.css",
-    "static/js/main.4ee0ebf2.chunk.js"
+    "static/js/main.e4a2f4e8.chunk.js"
   ]
 }
