@@ -17,7 +17,7 @@ const SideNav = () => {
                 <div className="nav-wrapper">
                     <ul className="nav-listing">
                         <li className="nav-item">
-                            <NavLink exact to="/bookdeporeact">
+                            <NavLink exact to="/">
                                 <span className="nav-icon">
                                     <img src={bookIcon} alt="" />
                                 </span>
@@ -25,7 +25,7 @@ const SideNav = () => {
                             </NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink exact to="/bookdeporeact/books">
+                            <NavLink exact to="/books">
                                 <span className="nav-icon">
                                     <img src={addBooks} alt="" />
                                 </span>
@@ -34,7 +34,7 @@ const SideNav = () => {
                             </NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink exact to="/bookdeporeact/favbooks">
+                            <NavLink exact to="/favbooks">
                                 <span className="nav-icon">
                                     <img src={addFavBooks} alt="" />
                                 </span>
