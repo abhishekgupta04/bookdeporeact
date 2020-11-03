@@ -30,7 +30,7 @@ class FormData extends Component {
     }
     noData = () => {
         console.log("function called")
-        let items = JSON.parse(localStorage.getItem('bookList'));
+        let items = JSON.parse(localStorage.getItem('bookList')) || [];
         if (items.length === 0) {
             this.setState({
                 data: true

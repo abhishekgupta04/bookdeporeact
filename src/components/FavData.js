@@ -57,7 +57,7 @@ class FavData extends Component {
     componentDidMount() {
         this.getData();
         this.printFavCount();
-        let items = JSON.parse(localStorage.getItem('bookList'));
+        let items = JSON.parse(localStorage.getItem('bookList')) || [];
         var output = items.filter(book => book.fav == true);
         if (output.length === 0) {
             this.noData();
