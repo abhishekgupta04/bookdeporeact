@@ -67,10 +67,9 @@ class FavData extends Component {
         let items = JSON.parse(localStorage.getItem('bookList')) || [];
         // console.log(items.length)
         var output = items.filter(book => book.fav == true);
-        // console.log(output.length)
+        console.log(output.length, "output length is")
         const outputData = output.map((element, index) => {
             return (
-                // <FavDataComponent element={element} id={index} key={index} getData={this.getData} noData={!this.state.data} />
                 <FavDataComponent element={element} id={index} key={index} getData={this.getData} noData={this.noData} />
             )
         })
@@ -86,7 +85,6 @@ class FavData extends Component {
                         <SearchBar />
                         <div className="page-title"><span>Favourites</span></div>
                         <div id="listOfFav" className="childCount cardElement">
-                            {/* {favDataComponent} */}
                             {outputData}
                         </div>
                     </div>
