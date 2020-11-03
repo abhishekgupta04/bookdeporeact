@@ -16,7 +16,6 @@ class FormComponent extends Component {
         localStorage.setItem('bookList', JSON.stringify(items));
         this.props.getData();
         this.printFavCount();
-        this.props.noData();
     }
     //mark fav cards
     markFav = (fav) => {

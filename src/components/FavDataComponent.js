@@ -6,8 +6,7 @@ class FavDataComponent extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            hasChanged: false,
-            data: true
+            hasChanged: false
         }
     }
     removeFav = (fav) => {
@@ -16,9 +15,8 @@ class FavDataComponent extends Component {
 
         console.log(favTarget)
 
-        // console.log(this.state.hasChanged)
-        // favTarget.remove();
-        // favTarget.parentElement.removeChild(favTarget)
+        console.log(this.state.hasChanged)
+        favTarget.remove();
         if (favTarget.getAttribute("data-id")) {
             this.setState(prevState => ({
                 hasChanged: !prevState.hasChanged
@@ -30,12 +28,6 @@ class FavDataComponent extends Component {
             })
         }
         localStorage.setItem('bookList', JSON.stringify(items));
-        // this.props.noData();
-        var output = items.filter(book => book.fav == true);
-        if (output.length === 0) {
-            this.props.noData();
-        }
-        favTarget.style.display = "none";
     }
     printFavCount = () => {
         let items = JSON.parse(localStorage.getItem('bookList'));
@@ -56,14 +48,11 @@ class FavDataComponent extends Component {
     }
     componentDidUpdate() {
         this.printFavCount();
-        // this.props.noData();
     }
     componentDidMount() {
         this.printFavCount();
-        // this.props.noData();
     }
     render() {
-        // console.log(this.props.noData)
         const { bookName, authorName, bookPrice } = this.props.element;
         const { id } = this.props;
         // console.log(id, bookName, authorName, bookPrice);
