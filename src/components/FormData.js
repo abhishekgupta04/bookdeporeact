@@ -27,15 +27,27 @@ class FormData extends Component {
                 data: true
             })
         }
-
+    }
+    noData = () => {
+        console.log("function called")
+        let items = JSON.parse(localStorage.getItem('bookList')) || [];
+        if (items.length === 0) {
+            this.setState({
+                data: true
+            })
+        }
+    }
+    componentDidUpdate() {
+        // this.getData();
     }
     componentDidMount() {
         this.getData();
+        this.noData();
     }
     render() {
         const formComponent = this.state.formArr.map((element, index) => {
             return (
-                <FormComponent element={element} id={index} key={index} getData={this.getData} fav={false} />
+                <FormComponent element={element} id={index} key={index} getData={this.getData} fav={false} noData={this.noData} />
             )
         })
         const data = this.state.data;
