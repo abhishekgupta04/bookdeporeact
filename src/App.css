@@ -290,6 +290,14 @@ a{
 .favListWrapper .card-top{
     justify-content: flex-end;
 }
+.fav-checkbox{
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+}
 .book-author-layer {
     width: 75%;
     white-space: nowrap;

@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import AddForm from './components/AddForm';
 import FormData from './components/FormData';
 import FavData from './components/FavData';
+import FormDataMod from './components/FormDataMod';
 
 class App extends Component {
   constructor(props) {
@@ -42,7 +43,8 @@ class App extends Component {
           <SideNav />
           <Switch>
             <Route path="/" exact component={AddForm} />
-            <Route path="/books" exact component={FormData} />
+            {/* <Route path="/books" exact component={FormData} /> */}
+            <Route path="/books" exact component={FormDataMod} />
             <Route path="/favbooks" exact component={FavData} />
           </Switch>
         </div>
